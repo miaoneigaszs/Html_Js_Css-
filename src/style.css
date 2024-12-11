@@ -1,0 +1,28 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+} */
+
+canvas{
+    width: 100%;
+    height: 2000px;
+}
+/* @media screen and (max-device-width:1500px) {
+    h2{
+        position: relative;
+        color: #fff;
+        font-size: 4.5em;
+        justify-content: center;
+        align-items: center;
+        display:flex;
+        margin: auto;
+    }
+} */

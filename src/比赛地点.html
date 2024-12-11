@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>信息咨询</title>
+    <link rel="stylesheet" href="信息咨询.css">
+</head>
+<body>
+    <div class="header_img">
+        <div class="middle">
+            <img src="../homework_img/安全.png" alt="" style="width: auto; height: 100px; margin-top: 30px;">
+            <span>ctf-信息咨询网站</span>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="menu1"> 
+            <ul class="list">
+                <li class="lt lt1"><a href="首页.html" target="_self">信息首页</a></li>
+                <li class="lt ltu zi1">比赛信息咨询
+                    <ul class="sub">
+                        <li class="zixun1"><a href="比赛地点.html" target="_self">比赛地点</a></li>
+                        <li><a href="比赛报名.html" target="_self">比赛报名</a></li>
+                        <li><a href="比赛介绍.html" target="_self">比赛介绍</a></li>
+                    </ul>
+                </li>
+                <li class="lt ltu xinwen1">论坛交流
+                    <ul class="sub">
+                        <li class="xinwen1"><a href="论坛.html" target="_self">论坛一</a></li>
+                        <li>论坛二</li>
+                    </ul>
+                </li>
+                <li class="lt ltu fagui">资源共享
+                    <ul class="sub">
+                        <li class="fagui"><a href="工具下载.html" target="_self">资源点一</a></li>
+                        <li>资源点二</li>
+                    </ul>
+                </li>
+                <li class="lt huiyuan"><a href="训练.html" target="_self">训练系统</a></li>
+                <li class="lt">更多信息</li>
+            </ul>
+        </div>
+        
+    </div>
+    
+    <div class="content">
+        <div class="download_menu">
+            <h1>比赛信息</h1>
+            <ul class="down_ul">
+              <li class="down_li" id="tool"><a target="_self" href="比赛报名.html" class="down_a">比赛报名</a></li>
+              <li class="down_li" id="knowledge_down"><a href="比赛地点.html" class="down_a" target="_self">比赛地点</a></li>
+              <li class="down_li" id="vedio_down"><a href="比赛介绍.html" target="_self" class="down_a">比赛介绍</a></li>
+            </ul>
+        </div>
+        <div class="比赛地点">
+            <div class="学校介绍">
+                南昌大学：南昌大学是国家“双一流”建设高校、教育部与江西省部省合建高校、江西省一流大学整体建设高校。
+                学校地处“英雄城”南昌市，拥有前湖、青山湖、东湖3个校区，其中前湖主校区占地面积4321亩，校舍建筑面积150万平方米。
+            </div>
+            <div id="map">
+
+            </div>
+        </div>
+    </div>
+    <script src="信息咨询.js"></script>
+</body>
+<script>
+    // 使用百度地图接口来显示南昌大学地理位置
+    function initMap() {
+      var map = new BMap.Map("map");
+      var point = new BMap.Point(115.852035, 28.682892);
+      map.centerAndZoom(point, 15);
+      var marker = new BMap.Marker(point);
+      map.addOverlay(marker);
+      marker.setAnimation(BMAP_ANIMATION_BOUNCE); // 标注跳动的动画
+      var label = new BMap.Label("南昌大学", { offset: new BMap.Size(20, -10) });
+      marker.setLabel(label);
+    }
+</script>
+<script src="http://api.map.baidu.com/api?v=2.0&ak=2tGmKsZGfXAW6VvQxXuQkLkQFIL4PR58&s=1&callback=initMap" async defer></script>
+</html>

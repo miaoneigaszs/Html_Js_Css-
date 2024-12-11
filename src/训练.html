@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>训练系统</title>
+    <link rel="stylesheet" href="huiyuanminglu.css">
+    <style>
+        .questions{
+            float: left;
+            list-style: none;
+            margin-right: 30px;
+            margin-top: 30px;
+        }
+        #num_qus:hover{
+            cursor: pointer;
+        }
+        .clear{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="k1"></div>
+    <!-- <div class="piaochuang">
+        <img src="../homework_img/piaochuang.jpg" alt="" style="width: 200px;">
+    </div> -->
+    <div class="header_img">
+        <div class="middle">
+            <img src="../homework_img/安全.png" alt="" style="width: auto; height: 100px; margin-top: 30px;">
+            <span>ctf-信息咨询网站</span>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="menu1"> 
+            <ul class="list">
+                <li class="lt lt1"><a href="首页.html" target="_self">信息首页</a></li>
+                <li class="lt ltu zi1">比赛信息咨询
+                    <ul class="sub">
+                        <li class="zixun1"><a href="比赛地点.html" target="_self">比赛地点</a></li>
+                        <li><a href="比赛报名.html" target="_self">比赛报名</a></li>
+                        <li><a href="比赛介绍.html" target="_self">比赛介绍</a></li>
+                    </ul>
+                </li>
+                <li class="lt ltu xinwen1">论坛交流
+                    <ul class="sub">
+                        <li class="xinwen1"><a href="论坛.html" target="_self">论坛一</a></li>
+                        <li>论坛二</li>
+                    </ul>
+                </li>
+                <li class="lt ltu fagui">资源共享
+                    <ul class="sub">
+                        <li class="fagui"><a href="工具下载.html" target="_self">资源点一</a></li>
+                        <li>资源点二</li>
+                    </ul>
+                </li>
+                <li class="lt huiyuan"><a href="训练.html" target="_self">训练系统</a></li>
+                <li class="lt">更多信息</li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div class="banner" style="border: 1px solid black;">
+            <span id="que_head">题目难度选择</span>
+            <ul id="que_menu">
+                
+                <li>初级小白</li>
+                <li>小有成就</li>
+                <li>大师级别</li>
+            </ul>
+            
+            
+        </div>
+        <div class="biaoge" style="border: 1px solid black; float: left;">
+                <div class="questions" >
+                    <img src="../homework_img/安全1.png" alt="题目一">
+                    <div style="color: blue;" id="num_qus">题目一：warmup训练</div>
+                    <div><input type="text", placeholder="flag" class="fflag"></div>
+                    <button style="position: relative; margin-left: 20%;" class="submit">提交</button>
+                </div>
+                <div class="questions">
+                    <img src="../homework_img/安全2.png" alt="">
+                    <div style="color: blue;" id="num_qus">题目二：improve训练</div>
+                    <div><input type="text", placeholder="flag" class="fflag"></div>
+                    <button style="position: relative; margin-left: 20%;" class="submit">提交</button>
+                </div>
+                <div class="questions">
+                    <img src="../homework_img/安全3.png" alt="">
+                    <div style="color: blue;" id="num_qus">题目三：sql注入训练加强版</div>
+                    <div><input type="text", placeholder="flag" class="fflag"></div>
+                    <button style="position: relative; margin-left: 20%;" class="submit">提交</button>
+                </div>
+                <div class="questions">
+                    <img src="../homework_img/安全4.png" alt="">
+                    <div style="color: blue;" id="num_qus">题目四：代码审计训练</div>
+                    <div><input type="text", placeholder="flag" class="fflag"></div>
+                    <button style="position: relative; margin-left: 20%;" class="submit">提交</button>
+                </div>
+            </ul>
+
+
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="foot">
+        <img src="../homework_img/安全04.jpg", style="width: 1000px; height: 100px;">
+        <hr style="width: 1000px; opacity: 0.5; color: gray;">
+
+    </div>
+
+    <script src="huiyuan.js"></script>
+</body>
+</html>

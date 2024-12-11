@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.header_img{
+    width: 100%;
+    height: 150px;
+    background-color: skyblue;
+    background-image: url(https://www.bafs.org.cn/images/top_bg.jpg);
+}
+
+.middle{
+    margin: 0 auto;
+    width: 1000px;
+    height: 150px;
+    font-size: 40px;
+    position: relative;
+    
+}
+.middle>img{
+    height: 150px;
+    width: auto;
+    float: left;
+}
+.middle>span{
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 175px;
+    color: black;
+}
+.menu{
+    width: 100%;
+    height: 50px;
+    background-color: skyblue;
+    margin: 2px auto;
+    color: white;
+}
+.menu1{
+    width: 1000px;
+    margin: auto;
+}
+.lt{
+    float: left;
+    list-style: none;
+    line-height: 50px;
+    width: 166px;
+    height:50px;
+    text-align: center;
+    font-size: 20px;
+}
+.li6{
+    float: left;
+    list-style: none;
+    line-height: 50px;
+    width: 166px;
+    text-align: center;
+    font-size: 20px;
+}
+.sub>li{
+    list-style: none;
+    width: 166px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    background-color:skyblue;
+}
+.sub>li:hover{
+    background-color: rgb(63, 184, 232);
+}
+.sub{
+    position: relative;
+    transition:0.5s;
+    height: 0px;
+    overflow: hidden;
+    z-index: 2;
+}
+.ltu:hover .sub{
+    cursor: pointer;
+    height: 150px;
+}
+.lt:hover{
+    background-color: rgb(63, 184, 232);
+    cursor: pointer;
+}
+
+.content{
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    position: relative;
+    box-sizing: border-box;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 60%;
+    min-height: 500px;
+    min-width: 600px;
+}
+
+.k1:hover .ti1{
+    height: 60px;
+}
+
+.biaoge{
+    height: auto;
+    margin-top: 30px;
+    width: 70%;
+}
+.banner{
+    margin-top: 30px;
+    float: left;
+    margin-right: 4%;
+    margin-left: 2%;
+}
+
+#que_menu>li{
+    list-style: none;
+    height: 40px;
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: "collapse";
+    line-height: 40px;
+    font-size: 14px;
+}
+#que_menu>li:hover{
+    cursor: pointer;
+    background-color: lightblue;
+}
+#que_head{
+    display: block;
+    height: 50px;
+    background-color: rgb(62, 119, 175);
+    color: white;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+
+}
+.questions{
+    float: left;
+    width: 25%;
+    margin-left: 10px;
+}
+.questions>img{
+    width: 100px;
+}
+.foot{
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    
+}
+.foot>img{
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+}
+.clear{
+    clear: both;
+}
